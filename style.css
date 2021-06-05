@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+:root {
+  --vermelho: #f80507;
+  --roxo-claro: #d674e5;
+  --roxo-escuro: #71618e;
+  --color-button-text: #fff;
+  --color-primary-100: #dee3ea;
+  --color-primary-200: #b2bdcd;
+  --color-primary-300: #5d7290;
+  --color-primary-600: #323d4d;
+  --color-primary-700: #242c37;
+  --color-primary-800: #151a21;
+  --color-primary-900: #0b0e11;
+}
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  background: var(--color-primary-900);
+  color:var(--color-primary-100);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a, button {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+.bg-primary-100 {
+  background: var(--color-primary-100);
+}
+.bg-primary-900 {
+  background: var(--color-primary-900);
+}
+.bg-primary-800 {
+  background: var(--color-primary-800);
+}
+.bg-primary-700 {
+  background: var(--color-primary-700);
+}
+.bg-light-purple {
+  background: var(--roxo-claro);
+}
+.bg-dark-purple {
+  background: var(--roxo-escuro);
+}
+.text-light-purple {
+  color: var(--roxo-claro);
+}
+.text-dark-purple {
+  color: var(--roxo-escuro);
+}
+.home-background {
+  position:absolute;
+  z-index: -1;
+  width: 100%;
+  height: 90vh;
+  background: url('img/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home-background::after {
+  content: "";
+  position:absolute;
+  height: 35vh;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(11,14,17, 0.025) 0%, rgba(11,14,17,1) 90%, rgba(11,14,17,1) 100%);
+  bottom: 0;
+  left: 0;
+}
+header {
+  padding-top: 1rem;
+}
+#section-home > .row{
+  min-height: 65vh;
+}
+.page-logo {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+}
+.page-section {
+  text-align:center;
+  padding: 4rem 0;
+}
+.section-title {
+  color: var(--roxo-claro);
+  margin-bottom: 1.5rem;
+}
+.section-description {
+  margin-bottom: 3rem;
+}
+.carousel-item img {
+  border-radius: 0.5rem;
+  max-height: 720px;
+}
+.carousel-control-next > i, .carousel-control-prev > i {
+  font-size: 3rem;
+}
+.card-info {
+  background: none;
+  border: 1px solid var(--color-primary-700);
+}
+/*  SEÇÃO DISCORD */ 
+.card-discord {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  background: var(--color-primary-800);
+}
+.discord-wrapper {
+  height: 500px;
+  width: 350px;
+  background: lightgray;
+  border-radius: 0.25rem;
+}
+.discord-icon {
+  text-align:center;
+  padding: 1rem;
+  font-size: 2rem;
+}
+.app-btn-primary {
+  color: #fff;
+  background-color: var(--vermelho);
+  border-color: #e83335;
+}
+.app-btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgb(248 5 7 / 50%) !important;
+}
+/* SEÇÃO PACOTES */
+.card-pricing {
+  text-align:center;
+  padding-top: 3rem;
+  background: var(--color-primary-800);
+}
+.card-pricing-main {
+  margin-top: -2rem;
+}
+.btn-group-pricing {
+  margin-bottom: 7.5rem;
+}
+.card-pricing .card-title {
+  font-weight: 900;
+}
+.card-pricing .card-footer {
+  background: var(--color-primary-700);
+}
+.pricing {
+  justify-content:center;
+  display:flex;
+  align-items:flex-start;
+  margin-bottom: 1rem;
+}
+.moeda {
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.preco {
+  font-size: 3rem;
+  line-height: 2rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+.duracao {
+  text-align:left;
+  line-height: 1.2rem;
+  word-break: break-all;
+}
+.card-pricing .list-unstyled {
+  margin-bottom: 0;
+}
+.card-pricing .list-unstyled li {
+  position: relative;
+  display: block;
+  padding: .5rem 1rem;
+}
+.card-pricing-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  text-align:center;
+  line-height: 75px;
+  position:absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--roxo-claro);
+  background: var(--color-primary-700);
+  font-size: 2rem;
+}
+.custom-collapse {
+  display:none;
+}
+.custom-collapse.show {
+  display:block;
+  position:relative;
+  animation: fade 1s 1;
+}
+@keyframes fade {
+  0% {
+    opacity: 0.5;
+    bottom: -50px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+.btn-nav {
+  margin-right: 0.75rem;
+}
