@@ -157,7 +157,7 @@
         <div class="row g-5 justify-content-center">
           <div class="col-auto">
             <div class="discord-wrapper">
-              <iframe src="link do widget aqui" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+              <iframe src="id do discord aqui" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             </div>
           </div>
           <div class="col-6">
@@ -249,7 +249,7 @@
                       <span class="preco">9,99</span>
                       <span class="duracao">por <br/>mês</span>
                     </div>
-                    <button type="button" class="btn btn-danger" id="rinha-buy">Adquira já</button>
+                    <button type="button" class="btn btn-danger" onclick="rinhaBuy()">Adquira já</button>
                   </div>
                 </div>
               </div>
@@ -272,7 +272,7 @@
                       <span class="preco">13</span>
                       <span class="duracao">por <br/>mês</span>
                     </div>
-                    <button type="button" class="btn btn-danger" id="rinha-buy">Adquira já</button>
+                    <button type="button" class="btn btn-danger" onclick="rinhaBuy()">Adquira já</button>
                   </div>
                 </div>
               </div>
@@ -294,7 +294,7 @@
                       <span class="preco">4,99</span>
                       <span class="duracao">por <br/>mês</span>
                     </div>
-                    <button type="button" class="btn btn-danger" id="rinha-buy">Adquira já</button>
+                    <button type="button" class="btn btn-danger" onclick="rinhaBuy()">Adquira já</button>
                   </div>
                 </div>
               </div>
@@ -321,7 +321,7 @@
                       <span class="preco">45,00</span>
                       <span class="duracao">por <br/>semestre</span>
                     </div>
-                    <button type="button" class="btn btn-danger" id="rinha-buy">Adquira já</button>
+                    <button type="button" class="btn btn-danger" onclick="rinhaBuy()">Adquira já</button>
                   </div>
                 </div>
               </div>
@@ -344,7 +344,7 @@
                       <span class="preco">65,00</span>
                       <span class="duracao">por <br/>semestre</span>
                     </div>
-                    <button type="button" class="btn btn-danger" id="rinha-buy">Adquira já</button>
+                    <button type="button" class="btn btn-danger" onclick="rinhaBuy()">Adquira já</button>
                   </div>
                 </div>
               </div>
@@ -368,7 +368,7 @@
                       <span class="preco">75,00</span>
                       <span class="duracao">por <br/>semestre</span>
                     </div>
-                    <button type="button" class="btn btn-danger" id="rinha-buy">Adquira já</button>
+                    <button type="button" class="btn btn-danger" onclick="rinhaBuy()">Adquira já</button>
                   </div>
                 </div>
               </div>
@@ -390,7 +390,7 @@
                       <span class="preco">25,00</span>
                       <span class="duracao">por <br/>semestre</span>
                     </div>
-                    <button type="button" class="btn btn-danger" id="rinha-buy">Adquira já</button>
+                    <button type="button" class="btn btn-danger" onclick="rinhaBuy()">Adquira já</button>
                   </div>
                 </div>
               </div>
@@ -431,7 +431,11 @@
       });
     });
 
-    
+
+    //redireciona para o chat do rinha-shop
+    function rinhaBuy() {
+      window.open("https://discord.gg/NM2B65cn", "_blank");
+    }
     
     $( document ).ready(function() {
 
@@ -451,10 +455,8 @@
       }   
     });
 
-    //redireciona para o chat do rinha-shop
-    $('#rinha-buy').on('click', function() {
-      window.open("https://discord.gg/NM2B65cn", "_blank");
-    });
+    
+    
   
 
 });
